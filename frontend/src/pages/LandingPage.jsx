@@ -9,8 +9,6 @@ export default function LandingPage() {
 
             {/* HERO SECTION */}
             <HeroSlider />
-
-
             {/* SYSTEM CAPABILITIES */}
             <section className="px-6 py-14 bg-white">
                 <div className="max-w-6xl mx-auto">
@@ -217,7 +215,7 @@ export default function LandingPage() {
 
 
             {/* FOOTER NOTE */}
-            <footer className="px-6 py-6 text-center text-xs text-slate-500 bg-[#F5F7FA] border-t border-slate-300">
+            <footer className="px-6 py-6 text-center text-xs text-slate-200 bg-[#0f2b6a] border-t border-slate-300">
                 This system is intended for authorized railway personnel only.
                 All activities are logged for security and audit purposes.
             </footer>

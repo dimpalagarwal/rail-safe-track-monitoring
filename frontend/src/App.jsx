@@ -1,14 +1,21 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import LandingPage from "./pages/LandingPage";
+
+// export default function App() {
+//   return <LandingPage />;
+// }
+
+import { Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
-import Login from "./pages/Login";
+import TrackMonitor from "./pages/TrackMonitor";
+import TrafficControlPage from "./pages/TrafficControlPage";
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/monitoring" element={<TrackMonitor />} />
+      <Route path="/traffic-control" element={<TrafficControlPage />} />
+    </Routes>
   );
 }
+
