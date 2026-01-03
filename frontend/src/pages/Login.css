@@ -1,0 +1,175 @@
+/* PAGE BACKGROUND */
+
+.login-page {
+  min-height: 100vh;
+  background: #f2f4f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* LOGIN CARD */
+.login-box {
+  width: 420px;
+  background: #ffffff;
+  padding: 20px 24px; /* reduced to fit page */
+  border-radius: 0px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* HEADER BLOCK */
+.login-header {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+/* ICON */
+.login-icon {
+  width: 36px;
+  height: 36px;
+  margin: 0 auto 6px auto;
+}
+
+.login-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* TITLE */
+.login-header h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  color: #111;
+}
+
+/* SUBTITLE */
+.login-subtitle {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+
+/* RED BADGE */
+.auth-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  color: #c0392b;
+  background: #fdecec;
+  padding: 4px 8px;
+  border-radius: 0px;
+  letter-spacing: 0.4px;
+}
+
+/* DIVIDER ABOVE ROLE SELECTION */
+.section-divider {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 8px;
+  margin: 12px 0 8px;
+}
+
+/* SECTION LABEL */
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6b7280;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+/* ROLE GRID */
+.roles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.role-card {
+  border: 1px solid #d9dee6;
+  padding: 10px;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #ffffff;
+}
+
+.role-card:hover {
+  border-color: #0f2b6a;
+}
+
+.role-card.active {
+  border-color: #0f2b6a;
+  background: #f5f8ff;
+}
+
+/* ROLE TEXT */
+.role-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f2b6a;
+  margin-bottom: 3px;
+}
+
+.role-sub {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+/* FORM LAYOUT */
+.row {
+  display: flex;
+  gap: 12px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.row .form-group {
+  flex: 1;
+}
+
+.form-group label {
+  display: block;
+  font-size: 12px;
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+/* INPUTS */
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 13px;
+  border-radius: 0px;
+  border: 1px solid #d1d5db;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #0f2b6a;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  background: #0f2b6a;
+  color: #ffffff;
+  border: none;
+  border-radius: 0px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: #0b2154;
+}

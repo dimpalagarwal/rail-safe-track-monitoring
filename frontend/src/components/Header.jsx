@@ -1,4 +1,6 @@
 import { Train, User } from "lucide-react";
+import { Link } from "react-router-dom";
+
 
 const navItems = [
   { label: "Home", href: "#", active: true },
@@ -50,8 +52,9 @@ export default function Header() {
               ))}
             </nav>
 
-            {/* Operator login */}
-            <button
+            {/* Login */}
+                  <Link to="/login">
+        <button
               className="
                 flex items-center gap-2
                 border border-slate-900
@@ -61,12 +64,13 @@ export default function Header() {
                 transition
                 hover:bg-[#0f2b6a]
                 hover:text-white
+                cursor-pointer
               "
             >
               <User className="h-4 w-4" />
-              Operator Login
+               Login
             </button>
-
+</Link>
           </div>
         </div>
       </div>
