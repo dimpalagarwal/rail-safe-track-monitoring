@@ -1,7 +1,6 @@
 export default function AppBrand({ showTagline = true }) {
   return (
-    <div className="flex items-center gap-4">
-      
+    <div className="flex items-center justify-center gap-0">
       {/* Logo */}
       <div className="h-15 w-20 flex items-center justify-center">
         <img
@@ -23,7 +22,6 @@ export default function AppBrand({ showTagline = true }) {
           </p>
         )}
       </div>
-
     </div>
   );
 }

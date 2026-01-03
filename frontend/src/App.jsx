@@ -1,9 +1,3 @@
-// import LandingPage from "./pages/LandingPage";
-
-// export default function App() {
-//   return <LandingPage />;
-// }
-
 import { Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import TrackMonitor from "./pages/TrackMonitor";
@@ -20,4 +14,3 @@ export default function App() {
     </Routes>
   );
 }
-
