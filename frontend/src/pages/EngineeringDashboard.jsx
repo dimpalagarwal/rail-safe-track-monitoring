@@ -232,17 +232,14 @@ export default function EngineeringDashboard() {
                             {/* ACTIONS */}
                             <div className="border-t pt-4 space-y-3">
                                 <button className="w-full bg-[#0f2b6a] text-white px-4 py-2 flex items-center justify-center gap-2">
-                                    <Wrench className="h-4 w-4" />
                                     Safety/Clearance Review
                                 </button>
 
                                 <button className="w-full border border-slate-300 px-4 py-2 flex items-center justify-center gap-2 hover:bg-slate-100">
-                                    <Camera className="h-4 w-4" />
                                    Final approval/Closure
                                 </button>
 
                                 <button className="w-full border border-slate-300 px-4 py-2 flex items-center justify-center gap-2 hover:bg-slate-100">
-                                    <Upload className="h-4 w-4" />
                                     Change alert status
                                 </button>
                             </div>
