@@ -46,22 +46,22 @@ function KpiCard({ icon: Icon, iconColor, title, value, subtitle, badge }) {
 }
 
 export default function TrackMonitor() {
-    const [alerts, setAlerts] = useState(mockAlerts);
-    const [selectedAlert, setSelectedAlert] = useState(mockAlerts[0]);
+    const [alerts, setAlerts] = useState(mockAlerts);    
+    const [selectedAlert, setSelectedAlert] = useState(alerts[0]);
 
     useEffect(() => {
-        fetch("/api/ml/predict")
-            .then((res) => res.json())
-            .then((data) => {
-                setAlerts(data);
-                setSelectedAlert(data[0]); // auto-select first alert
-            })
-            .catch((err) => {
-                console.error("ML API failed, using mock alerts");
-            });
-    }, []);
+  fetch("/api/ml/predict")
+    .then((res) => res.json())
+    .then((data) => {
+      setAlerts(data);
+      setSelectedAlert(data[0]);
+    })
+    .catch(() => {
+      console.warn("Using mock alerts");
+    });
+}, []);
+
     
-    const [selectedAlert, setSelectedAlert] = useState(alerts[0]);
     const [showNotesBox, setShowNotesBox] = useState(false);
     const [noteText, setNoteText] = useState("");
     const navigate = useNavigate();
