@@ -1,7 +1,8 @@
-def run_sensor_model(vibration_window):
+def run_sensor_model():
     return {
+        "track_section": "KM_23",
         "anomaly_score": 0.78,
-        "persistence_score": 0.81,
-        "risk_level": "HIGH",
-        "explanation": ["High RMS", "Impact-like vibration"]
+        "risk": "HIGH",
+        "confidence": 0.91,
+        "source": "sensor"
     }
