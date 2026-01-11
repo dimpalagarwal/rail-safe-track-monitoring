@@ -5,6 +5,9 @@ const connectDB = require("./config/db");
 
 const authRoutes = require("./routes/authRoutes");
 
+const mlRoutes = require("./routes/mlRoutes");
+
+app.use("/api/ml", mlRoutes);
 
 
 connectDB();
