@@ -192,14 +192,14 @@ export default function EngineeringDashboard() {
 
                         {/* MAP PLACEHOLDER */}
                         <div className="h-64 border-b">
-  <iframe
-    title="New Delhi Map"
-    className="w-full h-full"
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-    src="https://www.google.com/maps?q=New+Delhi,India&output=embed"
-  />
-</div>
+                            <iframe
+                                title="New Delhi Map"
+                                className="w-full h-full"
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                src="https://www.google.com/maps?q=New+Delhi,India&output=embed"
+                            />
+                        </div>
 
                         {/* DETAILS */}
                         <div className="p-6 space-y-4 text-sm">

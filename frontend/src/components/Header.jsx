@@ -5,7 +5,7 @@ import AppBrand from "../components/AppBrand";
 const navItems = [
   { label: "Home", href: "#", active: true },
   { label: "Monitoring Areas", href: "/monitoring" },
-  { label: "Incident History", href: "/traffic-control" },
+  { label: "Incident History", href: "/history" },
 ];
 
 export default function Header() {

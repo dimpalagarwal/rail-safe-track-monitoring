@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 export default function HeroSection() {
+  const navigate = useNavigate();
   return (
     <section className="relative w-full h-[520px] overflow-hidden">
 
@@ -25,7 +28,7 @@ export default function HeroSection() {
           infrastructure security.
         </p>
 
-        <button className="bg-[#001232] text-white px-8 py-3 text-sm font-semibold tracking-wide hover:bg-[#0A1E4A] transition cursor-pointer">
+        <button onClick={() => navigate("/login")} className="bg-[#001232] text-white px-8 py-3 text-sm font-semibold tracking-wide hover:bg-[#0A1E4A] transition cursor-pointer">
           ENTER MONITORING CONSOLE
         </button>
 
