@@ -45,7 +45,7 @@ function KpiCard({ icon: Icon, iconColor, title, value, subtitle, badge }) {
 
 export default function TrackMonitor() {
   const [alerts, setAlerts] = useState(mockAlerts);
-  const [selectedAlert, setSelectedAlert] = useState(alerts[0]);
+  const [selectedAlert, setSelectedAlert] = useState(mockAlerts[0]);
 
   useEffect(() => {
     fetch("/api/ml/predict")
