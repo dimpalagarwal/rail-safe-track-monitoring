@@ -46,10 +46,10 @@ function KpiCard({ icon: Icon, iconColor, title, value, subtitle, badge }) {
 }
 
 export default function TrackMonitor() {
-    const [alerts, setAlerts] = useState(mockAlerts);    
-    const [selectedAlert, setSelectedAlert] = useState(alerts[0]);
+    const [alerts, setAlerts] = useState(mockAlerts);
+const [selectedAlert, setSelectedAlert] = useState(mockAlerts[0]);
 
-    useEffect(() => {
+useEffect(() => {
   fetch("/api/ml/predict")
     .then((res) => res.json())
     .then((data) => {
@@ -60,6 +60,7 @@ export default function TrackMonitor() {
       console.warn("Using mock alerts");
     });
 }, []);
+
 
     
     const [showNotesBox, setShowNotesBox] = useState(false);
